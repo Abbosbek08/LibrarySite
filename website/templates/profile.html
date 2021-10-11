@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ user.fname }}
+{% endblock %}
+
+{% block body %}
+<center>
+<h1>Assalomu aleykum {{ user.fname }}!!!</h1>
+<p>
+  Siz haqingizdagi ma'lumotlar:
+  <table>
+    <tr>
+      <th>Ma'lumot</th>
+      <th>Qiymat</th>
+    </tr>
+    <tr>
+      <td>Ism</td>
+      <td>{{ user.fname }}</td>
+    </tr>
+    <tr>
+      <td>Familya</td>
+      <td>{{ user.lname }}</td>
+    </tr>
+    <tr>
+      <td>Email manzil</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </table>
+</p>
+</center>
+{% endblock %}

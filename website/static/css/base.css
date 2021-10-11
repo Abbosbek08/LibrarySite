@@ -1,0 +1,59 @@
+body{
+  /* background: url('https://i.pinimg.com/originals/4a/d3/1e/4ad31e581fea06529ca8997f583b87be.jpg'); */
+  background: url('/static/img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+textarea{
+  background: none;
+  width: 50%;
+  height: 30%;
+}
+label{
+  color: white;
+  font-size: 130%;
+}
+input::placeholder,textarea::placeholder{
+  color:white;
+  font-size: 110%;
+  font-style: italic;
+}
+input,textarea{
+  color: white;
+  width: 50%;
+  font-size: 130%;
+  background: none;
+}
+input[type="submit"]{
+  width: 30%;
+  font-size: 130%;
+  background: none;
+  color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: black;
+  background-color: #dddddd;
+}
+tr:nth-child(odd) {
+  color: white;
+  background: #000;
+}
+h1{
+  color: white
+}
+.fa-search{
+  font-size: 30px;
+}

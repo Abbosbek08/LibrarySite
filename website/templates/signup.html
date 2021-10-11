@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Ro'yxatdan o'tish
+{% endblock %}
+
+{% block body %}
+<center>
+<form method="POST">
+  <label for="fname">Ism: </label><br>
+  <input type="text" name="fname" placeholder="Ism..." required>
+  <br>
+  <label for="lname">Familya: </label><br>
+  <input type="text" name="lname" placeholder="Familya..." required> <br>
+  <label for="email">Email manzil: </label><br>
+  <input type="email" name="email" placeholder="Email manzil..." required><br>
+  <label for="username">Foydalanuvchi nomi: </label>
+  <br>
+  <input type="text" name="username" required placeholder="Foydalanuvchi nomi..."><br>
+  <label for="password">Foydalanuvchi paroli: </label>
+  <br>
+  <input type="password" minlength="8" name="password" required placeholder="Foydalanuvchi paroli..."><br><br>
+  <input type="submit" value="Ro'yxatdan o'tish">
+</form>
+</center>
+{% endblock %}

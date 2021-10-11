@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Yangi kitob
+{% endblock %}
+
+{% block body %}
+<center>
+<form method="POST" enctype="multipart/form-data">
+  <label for="name">Kitob nomi: </label><br>
+  <input type="text" name="name" required placeholder="Kitob nomi..."><br>
+  <label for="description">Kitob haqida: </label><br>
+  <textarea name="description" placeholder="Kitob haqida..." cols="30" rows="10"></textarea><br>
+  <label for="author">Kitob muallifi: </label><br>
+  <input type="text" name="author" required placeholder="Kitob muallifi..."><br>
+  <label for="file">Kitob: </label><br>
+  <input type="file" name="file" placeholder="Kitob..." required><br><br>
+  <input type="submit" value="Yaratish">
+</form>
+</center>
+{% endblock %}

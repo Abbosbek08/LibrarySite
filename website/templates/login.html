@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Kirish
+{% endblock %}
+
+{% block body %}
+<center>
+<form method="POST">
+  <label for="username">Foydalanuvchi nomi: </label>
+  <br>
+  <input type="text" name="username" required placeholder="Foydalanuvchi nomi..."><br>
+  <label for="password">Foydalanuvchi paroli: </label>
+  <br>
+  <input type="password" name="password" required placeholder="Foydalanuvchi paroli..."><br><br>
+  <input type="submit" value="Kirish">
+</form>
+</center>
+{% endblock %}

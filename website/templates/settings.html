@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Hisob sozlamalari
+{% endblock %}
+
+{% block body %}
+<center>
+  <form method="POST">
+    <label for="fname">Ism: </label><br>
+    <input type="text" name="fname" placeholder="Ism..." required value="{{ user.fname }}">
+    <br>
+    <label for="lname">Familya: </label><br>
+    <input type="text" name="lname" placeholder="Familya..." required value="{{user.lname}}"> <br>
+    <label for="email">Email manzil: </label><br>
+    <input type="email" name="email" placeholder="Email manzil..." required value="{{ user.email }}">
+    <br><br>
+    <input type="submit" value="O'zgartirish">
+  </form>
+</center>
+{% endblock %}

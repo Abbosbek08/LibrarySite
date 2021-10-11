@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bosh sahifa
+{% endblock %}
+
+{% block body %}
+{% for book in books %}
+<div class="card" style="width: 28rem;">
+  <embed src="/book/display/{{book.id}}" height="170%">
+  <div class="card-body">
+    <h2 class="card-title">{{ book.name }}</h2>
+    <p class="card-text">{{ book.description|safe }}</p>
+    <h5><i>By {{ book.author }}</i></h5>
+    <a href="/book/display/{{book.id}}" class="btn btn-primary">Kitobni o'qish va yuklash</a>
+    {% if (auth) and (current_user.id==book.author_id) %}
+    <a href="/book/delete/{{book.id}}" class="btn btn-primary">Kitobni O'chirish</a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
